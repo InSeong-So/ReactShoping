@@ -15,6 +15,8 @@
     "@emotion/core": "11.0.0",
     "@emotion/react": "11.7.1",
     "@emotion/styled": "11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@storybook/addon-a11y": "6.4.18",
     "@storybook/addon-controls": "6.5.0-alpha.13",
     "@storybook/addon-essentials": "6.5.0-alpha.13",
@@ -44,8 +46,8 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-testing-library": "5.0.5",
-    "typescript": "4.5.5",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "typescript": "4.5.5"
   },
   "scripts": {
     "start": "react-scripts start",
