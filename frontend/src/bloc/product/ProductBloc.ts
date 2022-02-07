@@ -1,5 +1,5 @@
-import GetProductsUseCase from '../../domain/product';
-import { Bloc } from '../';
+import GetProductsUseCase from '@/domain/product';
+import { Bloc } from '@/bloc';
 import { ProductsState } from 'product';
 
 export const productsInitialState: ProductsState = {

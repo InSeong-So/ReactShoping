@@ -6,9 +6,9 @@ import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import logo from './Logo.png';
-import { useBloc as useCartBloc } from '../../context';
+import { useBloc as useCartBloc } from '@/context';
 import { UpdatedCartState, CartState } from 'cart';
-import { BlocBuilder } from '../../bloc';
+import { BlocBuilder } from '@/bloc';
 
 const useStyles = makeStyles((theme: Theme) => ({
   toolbar: {
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
                   : 0;
 
               return (
-                <Badge badgeContent={totalItems} color="secondary">
+                <Badge badgeContent={totalItems} color="error">
                   <ShoppingCartIcon onClick={() => bloc.openCart()} />
                 </Badge>
               );

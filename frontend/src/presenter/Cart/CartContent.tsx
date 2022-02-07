@@ -3,8 +3,8 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 import { List, Divider, Box, Typography, CircularProgress } from '@material-ui/core';
 import CartContentItem from './CartContentItem';
 import { CartState, CartItemState } from 'cart';
-import { useBloc as useCartBloc } from '../../context';
-import { BlocBuilder } from '../../bloc';
+import { useBloc as useCartBloc } from '@/context';
+import { BlocBuilder } from '@/bloc';
 
 const useStyles = makeStyles((theme: Theme) => ({
   totalPriceContainer: {

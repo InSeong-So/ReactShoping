@@ -4,9 +4,9 @@ import { Drawer, IconButton, Divider, Typography, Box } from '@material-ui/core'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CartContent from './CartContent';
-import { useBloc as useCartBloc } from '../../context';
+import { useBloc as useCartBloc } from '@/context';
 import { CartState } from 'cart';
-import { BlocBuilder } from '../../bloc';
+import { BlocBuilder } from '@/bloc';
 
 const drawerWidth = 350;
 

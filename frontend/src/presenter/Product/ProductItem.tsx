@@ -10,7 +10,7 @@ import {
   Button,
 } from '@material-ui/core';
 import { ProductEntity } from 'product';
-import { useBloc as useCartBloc } from '../../context';
+import { useBloc as useCartBloc } from '@/context';
 
 const useStyles = makeStyles(theme => ({
   card: {

@@ -1,11 +1,11 @@
-import Cart from '../../domain/cart';
 import { ProductEntity } from 'product';
 import { CartState, CartItemState } from 'cart';
-import GetCartUseCase from '../../domain/cart/useCases/GetCartUseCase';
-import AddProductToCartUseCase from '../../domain/cart/useCases/AddProductToCartUseCase';
-import RemoveItemFromCartUseCase from '../../domain/cart/useCases/RemoveItemFromCartUseCase';
-import EditQuantityOfCartItemUseCase from '../../domain/cart/useCases/EditQuantityOfCartItemUseCase';
-import { Bloc } from '../';
+import Cart from '@/domain/cart';
+import GetCartUseCase from '@/domain/cart/useCases/GetCartUseCase';
+import AddProductToCartUseCase from '@/domain/cart/useCases/AddProductToCartUseCase';
+import RemoveItemFromCartUseCase from '@/domain/cart/useCases/RemoveItemFromCartUseCase';
+import EditQuantityOfCartItemUseCase from '@/domain/cart/useCases/EditQuantityOfCartItemUseCase';
+import { Bloc } from '@/bloc';
 
 export const cartInitialState: CartState = {
   kind: 'LoadingCartState',

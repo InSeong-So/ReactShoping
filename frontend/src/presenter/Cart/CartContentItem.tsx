@@ -11,7 +11,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import RemoveIcon from '@material-ui/icons/Clear';
-import { useBloc as useCartBloc } from '../../context';
+import { useBloc as useCartBloc } from '@/context';
 import { CartItemState } from 'cart';
 
 const useStyles = makeStyles((theme: Theme) => ({

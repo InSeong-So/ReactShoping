@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CircularProgress, Grid, Container, Box, Typography } from '@material-ui/core';
 import ProductItem from './ProductItem';
-import * as DependenciesProvider from '../../factory/DependenciesProvider';
-import { BlocBuilder } from '../../bloc';
+import * as DependenciesProvider from '@/factory/DependenciesProvider';
+import { BlocBuilder } from '@/bloc';
 import { ProductsState } from 'product';
 
 const useStyles = makeStyles(theme => ({
