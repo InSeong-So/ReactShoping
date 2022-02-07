@@ -36,11 +36,6 @@ declare module 'cart' {
     price: string;
     quantity: number;
   }
-
-  export const cartInitialState: CartState = {
-    kind: 'LoadingCartState',
-    open: false,
-  };
 }
 declare module 'product' {
   export interface ProductEntity {
@@ -49,4 +44,25 @@ declare module 'product' {
     title: string;
     price: number;
   }
+
+  export interface CommonProductsState {
+    searchTerm: string;
+  }
+
+  export interface LoadingProductsState {
+    kind: 'LoadingProductsState';
+  }
+
+  export interface LoadedProductsState {
+    kind: 'LoadedProductsState';
+    products: Array<ProductEntity>;
+  }
+
+  export interface ErrorProductsState {
+    kind: 'ErrorProductsState';
+    error: string;
+  }
+
+  export type ProductsState = (LoadingProductsState | LoadedProductsState | ErrorProductsState) &
+    CommonProductsState;
 }
